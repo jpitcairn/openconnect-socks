@@ -15,6 +15,10 @@ RUN rm -rf /var/cache/apk/*
 COPY sockd.conf /etc/
 COPY entry.sh /
 
+# Open local port for proxy
 EXPOSE 1080
+
+# Fix permissions of entry.sh
+RUN chmod 777 /entry.sh
 
 ENTRYPOINT ["/entry.sh"]
