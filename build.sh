@@ -1,1 +1,1 @@
-docker build -t jpitcairn/openconnect-socks:1.0 .
+docker build -t jpitcairn/openconnect-socks:2.0 .
